@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "ZaloPay Payment";
+}
+
+<h2>Thanh Toán với ZaloPay</h2>
+
+<form method="post" action="/Payment/CreateOrder">
+    <label for="amount">Số tiền:</label>
+    <input type="number" id="amount" name="amount" required />
+    
+    <label for="description">Mô tả:</label>
+    <input type="text" id="description" name="description" required />
+
+    <button type="submit">Thanh Toán</button>
+</form>
